@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-1: #8B48BF;
+    --primary-color-2: #3CDDF3;
+    --neutral-color-blueblack: #1E1E26;
+    --neutral-color-bluebold: #232851;
+    --neutral-color-graylight: rgb(249, 249, 249);
+
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    background-color: #F5F5F5;
+}
+/* Desktop */
+
+.burgermenu {
+    display: none;
+}
+header {
+    display: flex;
+    width: calc(auto + 1440px);
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Menu Header */
+
+.flex-menu {
+    display: flex;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style-type: none;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--neutral-color-bluebold);
+    font-weight: 500;
+    font-size: 16px;
+}
+.menu a:hover {
+    color: #242E5299;
+}
+.flex-btn {
+    display: flex;
+}
+
+/* Botón */
+.btn {
+    display: flex;
+}
+.btn a {
+    background-color: var(--primary-color-1);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 25px;
+    margin: fit-content;
+}
+.btn a:hover {
+    background-color: var(--neutral-color-bluebold);
+}
+
+/* Banner 1 */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 25px;
+}
+.banner-txt h1 {
+    color: var(--neutral-color-bluebold);
+    text-align: left;
+    font-size: 45px;
+    font-weight: 700;
+}
+.banner-txt span {
+    text-align: left;
+    color: black;
+    font-weight: 500;
+}
+.banner-img img {
+    width: 500px;
+}
+
+/* Banner 2 */
+
+.banner-2 {
+    display: flex;
+    background-color: #8B48BF;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+.banner-2 h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+}
+.banner-2 span {
+    color: white;
+    width: 450px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Banner Differences Pro */
+.banner-3-pro {
+    display: flex;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.banner-3-pro .title {
+    color: #323851;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+}
+.banner-3-pro .description {
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    width: 20em;
+}
+.banner-3-pro ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    text-align: left;
+    list-style-type: none;
+}
+/* Contador LI - Banner 3 */
+.banner-3-pro li {
+    display: flex;
+    counter-increment: step-counter;
+}
+.banner-3-pro li::before {
+    content: "0" counter(step-counter);
+    background-color: var(--primary-color-1);
+    z-index: 1;
+    color: white;
+    height: fit-content;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.testimonials-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.testimonials-title {
+    color: #242E53;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+    gap: 10px;
+    padding: 50px;
+}
+img.card-avatar {
+    position: absolute;
+    top: -30px;
+}
+.card-title { 
+    color: #3F4868;
+    font-size: 16.07px;
+    font-weight: 700;
+}
+.card-description {
+    color: #B9B9C1;
+    width: 20em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Botón Contacto */
+.btn.contact {
+    display: flex;
+    padding-top: 50px;
+}
+
+/* * Newsletter */
+.newsletter {
+    background-color: var(--primary-color-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 224px;
+}
+.newsletter > .title {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    width: 393px;
+} 
+.btn.white a {
+    background-color: white;
+    color: var(--primary-color-1);
+}
+.btn.white a:hover {
+    background-color: var(--primary-color-2);
+    color: white;
+}
+/* Footer */
+.footer {
+    padding: 35px;
+    background-color: var(--neutral-color-blueblack);
+}
+.columns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.columns-box {
+    display: flex;
+    gap: 120px;
+}
+.columns-items {
+    display: flex;
+    gap: 120px;
+}
+.columns-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.columns-content ul {
+    list-style-type: none;
+    line-height: 2em;
+}
+.columns-content li a {
+    text-decoration: none;
+    color: white;
+    
+}
+i {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    color: #8C8C94;
+}
+/* Form Footer */
+
+input {
+    font-family: 'Be Vietnam Pro';
+    font-size: 13px;
+    background: #FFFFFF;
+    padding: 10px;
+    height: 44px;
+    width: 200px;
+    border: 0;
+    border-radius: 50px;
+}
+input:focus {
+    outline: none;
+}
+input::placeholder {
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.1806px;
+    color: #A0A0A0;
+}
+
+/* Botón */
+button {
+    font-family: 'Be Vietnam Pro';
+    margin-left: 10px;
+    background-color: var(--primary-color-1);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 25px;
+    border: 0;
+    margin: fit-content;
+}
+button:hover {
+    background-color: var(--neutral-color-bluebold);
+}
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+
+    /* Elementos Ocultos en Mobile */
+    .flex-menu, .flex-btn{
+        display: none;
+    }
+    .burgermenu {
+        display: initial;
+    }
+    /* Banner 1 */
+
+    .banner {
+        flex-wrap: wrap;
+        padding: 35px;
+    }
+    .banner-txt {
+        width: 400px;
+        gap: 25px;
+    }
+    .banner-txt h1 {
+        text-align: right;
+    }
+    .banner-txt span {
+        text-align: right;
+    }
+    .banner-img img {
+        width: 350px;
+    }
+    .btn.contact-main {
+        justify-content: flex-end;
+    }
+    
+    /* Banner 2 */
+
+    .banner-2 h2 {
+        font-size: 26px;
+    }
+    .banner-2 span {
+        width: 450px;
+        font-size: 13px;
+    }
+
+    /* Differences Pros - Boxs */
+
+    .banner-3-pro .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        height: 40px;
+        background-color: rgba(139, 72, 191, 0.3);
+        border-radius: 0px 50px 50px 0px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    .banner-3-pro li::before {
+        position: absolute;
+        left: 30px;
+    }
+
+    
+    /* Testimonials */
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    .testimonials-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonials-title {
+        color: #242E53;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .card {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Newsletter */
+    .newsletter > .title {
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        width: 200px;
+    }
+    .btn.white a {
+        background-color: white;
+        color: var(--primary-color-1);
+    }
+    .btn.white a:hover {
+        background-color: var(--primary-color-2);
+        color: white;
+    }
+    /* Footer */
+    .columns-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+    .columns-items {
+        justify-content: center;
+        align-items: center;
+    }
+    .social {
+        display: flex;
+        gap: 50px;
+        order: -1;
+    }
+    .logo-footer {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+    }
+    img.logo-footer {
+        width: 250px;
+        align-self: center;
+    }
+    .copyright {
+        justify-content: center;
+    }
+    
+}
